@@ -10,6 +10,7 @@ class Helix < Formula
     root_url "https://github.com/antonme/homebrew-tap/releases/download/bottles"
     rebuild 1
     sha256 cellar: :any, arm64_tahoe: "166ff25fcbb54727e6c124ced3ee3d7b06a703669e9802edc49ded542269888a"
+    sha256 cellar: :any, x86_64_linux: "ff1a45472984cf71e5db77282256214aa59849de2d6a7732837e3b9c91f85c30"
   end
 
   head "https://github.com/antonme/helix.git", branch: "master"
