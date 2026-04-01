@@ -1,6 +1,9 @@
 class Mosh < Formula
   desc "Remote terminal application (fork with SSH agent forwarding + SGR dim/strikethrough)"
   homepage "https://github.com/antonme/mosh"
+  url "https://github.com/antonme/mosh/archive/refs/tags/v1.4.0-fork6.tar.gz"
+  sha256 "5f74ed22a4008a7a7d15eb790a9ee65742bec5ffd27d4847e1af817cb683a1c6"
+  version "1.4.0-fork6"
   license "GPL-3.0-or-later"
   head "https://github.com/antonme/mosh.git", branch: "master"
 

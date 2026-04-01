@@ -1,6 +1,9 @@
 class Helix < Formula
   desc "Post-modern modal text editor (fork with persistent undo)"
   homepage "https://github.com/antonme/helix"
+  url "https://github.com/antonme/helix/archive/refs/tags/v25.07.1-undo.tar.gz"
+  sha256 "5e51ed1d7e95d4bb2be0259496c1784c8935bca691c4a55f2a6f3a2bac880b69"
+  version "25.07.1-undo"
   license "MPL-2.0"
   head "https://github.com/antonme/helix.git", branch: "master"
 
