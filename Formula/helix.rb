@@ -5,6 +5,13 @@ class Helix < Formula
   sha256 "5e51ed1d7e95d4bb2be0259496c1784c8935bca691c4a55f2a6f3a2bac880b69"
   version "25.07.1-undo"
   license "MPL-2.0"
+
+  bottle do
+    root_url "https://github.com/antonme/homebrew-tap/releases/download/bottles"
+    rebuild 1
+    sha256 cellar: :any, arm64_tahoe: "166ff25fcbb54727e6c124ced3ee3d7b06a703669e9802edc49ded542269888a"
+  end
+
   head "https://github.com/antonme/helix.git", branch: "master"
 
   depends_on "rust" => :build

@@ -5,6 +5,13 @@ class Mosh < Formula
   sha256 "5f74ed22a4008a7a7d15eb790a9ee65742bec5ffd27d4847e1af817cb683a1c6"
   version "1.4.0-fork6"
   license "GPL-3.0-or-later"
+
+  bottle do
+    root_url "https://github.com/antonme/homebrew-tap/releases/download/bottles"
+    rebuild 1
+    sha256 cellar: :any, arm64_tahoe: "1f66a209034454ac1883908323739c433d97003ca6ab659254a0f545815b47cd"
+  end
+
   head "https://github.com/antonme/mosh.git", branch: "master"
 
   depends_on "autoconf" => :build
