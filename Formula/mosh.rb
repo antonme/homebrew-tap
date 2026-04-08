@@ -1,19 +1,12 @@
 class Mosh < Formula
-  desc "Remote terminal application (fork with SSH agent forwarding + SGR dim/strikethrough)"
+  desc "Remote terminal application (fork with OSC 10/11 color queries, hyperlinks, SGR dim/strikethrough)"
   homepage "https://github.com/antonme/mosh"
-  url "https://github.com/antonme/mosh/archive/refs/tags/v1.4.0-fork6.tar.gz"
-  sha256 "5f74ed22a4008a7a7d15eb790a9ee65742bec5ffd27d4847e1af817cb683a1c6"
-  version "1.4.0-fork6"
+  url "https://github.com/antonme/mosh/archive/refs/tags/fork7.tar.gz"
+  sha256 "631807cc81c1ac6a31aba41d4cc5df6a35c1417fe95a43ea1bd8c20d1c26cc1e"
+  version "1.4.0-fork7"
   license "GPL-3.0-or-later"
 
-  bottle do
-    root_url "https://github.com/antonme/homebrew-tap/releases/download/bottles"
-    rebuild 1
-    sha256 cellar: :any, arm64_tahoe: "1f66a209034454ac1883908323739c433d97003ca6ab659254a0f545815b47cd"
-    sha256 cellar: :any, x86_64_linux: "70952d49c100c9aeddcdce6a62dba806de3c81a1daa122c44f3fd9285db4e33f"
-  end
-
-  head "https://github.com/antonme/mosh.git", branch: "master"
+  head "https://github.com/antonme/mosh.git", branch: "osc10-11-query-support"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
