@@ -8,8 +8,8 @@ class Mosh < Formula
 
   bottle do
     root_url "https://github.com/antonme/homebrew-tap/releases/download/bottles"
-    rebuild 3
-    sha256 cellar: :any, arm64_tahoe: "d82e9178f4290e8bd16ffb9079266ec98f47ebc2b2f99ae85fdf4f554f9eb908"
+    rebuild 4
+    sha256 cellar: :any, arm64_tahoe: "f60f2ea1c88695886995b42ebb3807023328de6926224e3dabb7105c471c8aaf"
   end
 
   head "https://github.com/antonme/mosh.git", branch: "master"
